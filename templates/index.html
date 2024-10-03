@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Cards Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div class="game-container">
+    <h1>Memory Cards Game 🧠</h1>
+    <div class="settings">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="emojis">Emojis</option>
+            <option value="animals">Animals</option>
+            <option value="fruits">Fruits</option>
+        </select>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button id="start-game">Start Game</button>
+    </div>
+    <div class="stats">
+        <div>Score: 🏆 <span id="score">0</span></div>
+        <div>Moves: 🔄 <span id="moves">0</span></div>
+        <div>Misses: ❌ <span id="misses">0</span></div>
+        <div>Remaining Moves: ⏳ <span id="remaining">20</span></div>
+        <div>Best Record: <span id="best-record">--</span></div>
+        <div>Timer: ⏱ <span id="timer">0</span></div>
+        <button id="hint">Hint</button>
+        <button id="restart">Restart</button>
+    </div>
+    <div class="cards-container" id="cards-container">
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/game.js') }}" type="module"></script>
+</body>
+</html>
