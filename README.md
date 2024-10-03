@@ -1,6 +1,6 @@
 # Memory Cards Game
 
-A simple memory cards game built with Flask, JavaScript, HTML, and CSS. The game allows players to match pairs of cards and keeps track of scores, moves, and best records.
+Memory Cards Game is a web-based card matching game built with Flask, JavaScript, and CSS. The game features multiple themes, difficulty levels, score tracking, timer, hint, and restart options. It also includes a two-player mode with alternating turns. The game is designed to test your memory and concentration skills while providing an enjoyable and interactive experience.
 
 ## Features
 
